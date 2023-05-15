@@ -1,0 +1,783 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Main {
+  flex: 73%;
+  border: 1px solid #000;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* Header Main */
+.HeaderMain {
+  height: 150px;
+  border-top-left-radius: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.HeaderMain .Users {
+  width: 350px;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+}
+.Users img {
+  border-radius: 50px;
+  margin-right: -30px;
+}
+
+span.badge1 {
+  background-color: #ccc;
+  color: #000;
+  font-size: 17px;
+  padding: 15px 10px;
+  border-radius: 50px;
+  margin-right: 25px;
+  position: absolute;
+  top: 10px;
+  right: 80px;
+}
+
+span.badge2 {
+  background-color: #ccc;
+  background-image: url('./../images/plus30.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000;
+  border-radius: 50px;
+  padding: 15px 20px;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.TitleProject {
+  margin-left: 60px;
+}
+.TitleProject h2 {
+  font-weight: bold;
+}
+
+/* Statistics */
+.Statistics {
+  height: 410px;
+  position: relative;
+}
+
+.td1 {
+  height: 180px;
+  width: 260px;
+  background-color: royalblue;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.td1 span {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.td1 .card {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.td1 .card h3 {
+  margin-top: 12px;
+  margin-left: 5px;
+}
+
+.td1 .card p {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.td2 {
+  height: 180px;
+  width: 260px;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  position: absolute;
+  top: 10px;
+  left: 300px;
+}
+
+.td2 span {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.td2 .card {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.td2 h3 {
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.td2 .card p {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.td3 {
+  height: 375px;
+  width: 370px;
+  background-color: rgba(0, 255, 0, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  position: absolute;
+  top: 15px;
+  right: 280px;
+}
+
+.td3 .card {
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+
+.td3 .card span {
+  color: royalblue;
+}
+.linkt3 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 19px;
+  color: #000;
+  font-weight: 600;
+  position: absolute;
+  left: 45px;
+  bottom: 70px;
+}
+.td4 {
+  height: 375px;
+  width: 240px;
+  border-radius: 25px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #e3f6ff;
+}
+
+.td4 span img {
+  padding: 35px 80px;
+}
+
+.td4 .card {
+  padding: 50px 0px;
+}
+
+.td4 h2 {
+  font-weight: 700;
+  text-align: center;
+}
+.td5 {
+  height: 180px;
+  width: 260px;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  position: absolute;
+  top: 210px;
+  left: 20px;
+}
+
+.td5 span {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.td5 .card {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.td5 h3 {
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.td5 .card p {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.td6 {
+  height: 180px;
+  width: 260px;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  position: absolute;
+  top: 210px;
+  left: 300px;
+  background-color: #e3f6ff;
+}
+
+.td6 span {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.td6 .card {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.td6 h3 {
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.td6 .card p {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* calender table */
+
+.CalenderTable {
+  width: 100%;
+  height: 645px;
+  margin-top: 90px;
+  border-bottom-right-radius: 50px;
+  background-color: #e3f6ff;
+  position: relative;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 2px solid #ccc;
+  text-align: left;
+  font-size: 20px;
+  padding: 20px 10px;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+th {
+  text-align: center !important;
+  border-color: #fff;
+  background-color: #fff !important;
+}
+
+.end-tr {
+  padding-bottom: 50px;
+}
+
+h6 {
+  font-weight: 500;
+}
+
+.box1 {
+  width: 510px;
+  height: 75px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 190px;
+  left: 120px;
+}
+
+.box1 .MenuSpan {
+  float: right;
+  margin-top: 22px;
+  margin-right: 10px;
+}
+
+.box1 .ImageBoxTable {
+  float: right;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: -20px;
+  margin-right: 10px;
+}
+
+.box1 h4 {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.box1 p {
+  margin-left: 18px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.box2 {
+  width: 320px;
+  height: 75px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 130px;
+  right: 115px;
+}
+
+.box2 .MenuSpan {
+  float: right;
+  margin-top: 22px;
+  margin-right: 15px;
+}
+
+.box2 .ImageBoxTable {
+  float: right;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: -40px;
+  margin-right: 10px;
+}
+
+.box2 h4 {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.box2 p {
+  margin-left: 18px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.box3 {
+  width: 290px;
+  height: 75px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 100px;
+  right: 380px;
+}
+
+.box3 .MenuSpan {
+  float: right;
+  margin-top: 22px;
+  margin-right: 15px;
+}
+
+.box3 .ImageBoxTable {
+  float: right;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: -40px;
+  margin-right: 10px;
+}
+
+.box3 h4 {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.box3 p {
+  margin-left: 18px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.box4 {
+  width: 190px;
+  height: 75px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 60px;
+  right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-down {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 75px;
+  left: 637px;
+  background-image: url('./../images/15.png');
+  width: 15px;
+  height: 15px;
+}
+
+.arrow-line {
+  width: 4px;
+  height: 555px;
+  background-color: #08a6f3;
+  position: absolute;
+  top: 89px;
+  left: 642.5px;
+  z-index: 5;
+}
+
+/* Responsive mobile */
+@media (max-width: 600px) {
+  .Main {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: inline-block;
+  }
+
+  /* Header Main Mobile */
+
+  .HeaderMain {
+    display: block;
+    position: relative;
+    height: 300px;
+  }
+
+  .TitleProject {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    margin-bottom: 20px;
+  }
+
+  .Users {
+    display: block;
+    margin-top: 100px;
+    margin-right: -40px;
+  }
+
+  .Users img {
+    border-radius: 50px;
+    margin-right: -30px;
+    margin-bottom: 0px;
+  }
+
+  span.badge1 {
+    background-color: #ccc;
+    color: #000;
+    font-size: 17px;
+    padding: 15px 10px;
+    border-radius: 50px;
+    margin-right: 25px;
+    position: absolute;
+    top: 10px;
+    right: 80px;
+  }
+
+  span.badge2 {
+    background-color: #ccc;
+    background-image: url('./../images/plus30.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000;
+    border-radius: 50px;
+    padding: 15px 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  /* Statistics mobile */
+  .Statistics {
+    height: 2350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .td1 {
+    height: 270px;
+    width: 80%;
+    margin-left: 40px;
+    background-color: royalblue;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  .td1 span {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .td1 .card {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .td1 .card h1 {
+    margin-left: 50px !important;
+    text-align: center !important;
+    font-size: 50px !important;
+  }
+
+  .td1 .card h3 {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .td1 .card p {
+    text-align: center !important;
+    font-size: 25px;
+  }
+
+  .td2 {
+    height: 270px;
+    width: 80%;
+    margin-left: 40px;
+    color: #000;
+    border: medium solid #ccc;
+    border-radius: 20px;
+    position: absolute;
+    top: 390px;
+    left: 20px;
+  }
+
+  .td2 span {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .td2 .card {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .td2 .card h1 {
+    margin-left: 50px !important;
+    text-align: center !important;
+    font-size: 50px !important;
+  }
+
+  .td2 .card h3 {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .td2 .card p {
+    text-align: center !important;
+    font-size: 25px;
+  }
+  .td3 {
+    height: 375px;
+    width: 80%;
+    margin-left: 40px;
+    background-color: rgba(0, 255, 0, 0.3);
+    border: medium solid #ccc;
+    border-radius: 20px;
+    position: absolute;
+    top: 775px;
+    left: 20px;
+  }
+
+  .td3 .card {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+  }
+
+  .td3 .card h1 {
+    font-size: 40px !important;
+    text-align: center;
+  }
+
+  .td3 .card span {
+    text-align: center;
+    color: royalblue;
+  }
+  .linkt3 {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    position: absolute;
+    left: 150px;
+    bottom: 70px;
+  }
+  .td4 {
+    height: 270px;
+    width: 80%;
+    margin-left: 40px;
+    border-radius: 20px;
+    position: absolute;
+    top: 1260px;
+    left: 20px;
+    background-color: #e3f6ff;
+    border: medium solid #ccc;
+  }
+
+  .td4 span img {
+    padding: 35px 80px;
+  }
+
+  .td4 .card {
+    padding: 50px 0px;
+  }
+
+  .td4 h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 25px;
+  }
+  .td5 {
+    height: 270px;
+    width: 80%;
+    margin-left: 40px;
+    color: #000;
+    border: medium solid #ccc;
+    border-radius: 20px;
+    position: absolute;
+    top: 1635px;
+    left: 20px;
+  }
+
+  .td5 span {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .td5 .card {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .td5 .card h1 {
+    margin-left: 50px !important;
+    text-align: center !important;
+    font-size: 50px !important;
+  }
+
+  .td5 .card h3 {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .td5 .card p {
+    text-align: center !important;
+    font-size: 25px;
+  }
+
+  .td6 {
+    height: 270px;
+    width: 80%;
+    margin-left: 40px;
+    color: #000;
+    border: medium solid #ccc;
+    border-radius: 25px;
+    position: absolute;
+    top: 2015px;
+    left: 20px;
+    background-color: #e3f6ff;
+  }
+
+  .td6 span {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .td6 .card {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  .td6 .card h1 {
+    margin-left: 50px !important;
+    text-align: center !important;
+    font-size: 50px !important;
+  }
+
+  .td6 .card h3 {
+    text-align: center !important;
+    font-size: 30px;
+  }
+
+  .td6 .card p {
+    text-align: center !important;
+    font-size: 25px;
+  }
+
+  /* Table Calender Mobile */
+  .CalenderTable {
+    width: 100%;
+    height: 660px;
+    margin-top: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #e3f6ff;
+    position: relative;
+  }
+  .CalenderTable .MobileTable {
+    display: none;
+  }
+
+  .CalenderTable .box1 {
+    display: none;
+  }
+
+  .CalenderTable .box3 {
+    display: none;
+  }
+
+  .box4 {
+    width: 190px;
+    height: 75px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrow-down {
+    position: relative;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 95px;
+    left: 250px;
+    background-image: url('./../images/15.png');
+    width: 15px;
+    height: 15px;
+  }
+
+  .arrow-line {
+    width: 4px;
+    height: 560px;
+    background-color: #08a6f3;
+    position: absolute;
+    top: 100px;
+    left: 256px;
+    z-index: 5;
+  }
+}
